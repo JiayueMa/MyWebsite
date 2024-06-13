@@ -3,30 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journal Website</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>东方文摘</title>
+    <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
 <header>
-    <h1>Journal Website</h1>
+    <div class="container">
+        <h1>东方文摘</h1>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">经济</a></li>
+                <li><a href="#">政治</a></li>
+                <li><a href="#">东亚</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 <main>
-    <article>
-        <h2>Sample Article Title</h2>
-        <p>This is a sample article about sports.</p>
-        <section id="comments">
-            <h3>Comments</h3>
-            <div id="comment-list">
-                <!-- Comments will be loaded here -->
-            </div>
-            <form id="comment-form">
-                <input type="text" id="username" placeholder="Your Name" required>
-                <textarea id="comment" placeholder="Your Comment" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
+    <div class="container">
+        <section class="featured-articles">
+            <article>
+                <img src="assets/featured1.jpg" alt="Featured Article 1">
+                <h2>文章标题 1</h2>
+                <p>文章摘要内容 1...</p>
+            </article>
+            <article>
+                <img src="assets/featured2.jpg" alt="Featured Article 2">
+                <h2>文章标题 2</h2>
+                <p>文章摘要内容 2...</p>
+            </article>
+            <!-- Add more articles as needed -->
         </section>
-    </article>
+        <aside>
+            <section class="popular-articles">
+                <h3>热门文章</h3>
+                <ul>
+                    <li><a href="#">热门文章标题 1</a></li>
+                    <li><a href="#">热门文章标题 2</a></li>
+                    <!-- Add more popular articles as needed -->
+                </ul>
+            </section>
+            <section class="comments">
+                <h3>读者评论</h3>
+                <!-- Comment section content -->
+            </section>
+        </aside>
+    </div>
 </main>
-<script src="js/main.js"></script>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 东方文摘. 保留所有权利.</p>
+    </div>
+</footer>
 </body>
 </html>
+
